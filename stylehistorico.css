@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+}
+
+#shoppingListButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    float: left;
+    margin-top: -40px;
+    margin-left: 10px;
+}
+
+#shoppingListButton img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background-color: #333;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+}
+
+#shoppingHistoryContainer {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.history-item{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 60%;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    
+}
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 15px;
+    color: #333;
+    margin-bottom: 0;
+}
+
+#shoppingHistory {
+    list-style-type: none;
+    padding: 0;
+}
+
+.shopping-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-item p {
+    margin: 0;
+}
+
+.shopping-item .item-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.shopping-item .item-quantity {
+    color: #888;
+}
+
+.shopping-item .item-date {
+    color: #888;
+    font-style: italic;
+}
+
+.shopping-item .item-actions {
+    margin-top: 10px;
+}
+
+.shopping-item .item-actions button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.shopping-item .item-actions button:hover {
+    background-color: #0056b3;
+}

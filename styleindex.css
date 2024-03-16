@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #0056b3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.geral {
+    display: flex;
+    padding: 100px;
+    gap: 50px;
+}
+
+.container {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.container2 {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.itemNaoComprado {
+    width: 20%;
+    display: grid;
+    height: 200px;
+    
+}
+.itemComprado {
+    width: 25%;
+    display: grid;
+    
+}
+#itemInput {
+    width: 100%;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    background-color: #0056b3;
+    color: white;       
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #027cff;
+}
+
+#salvarComprar{
+    margin-top: 10px;
+    margin-left: 80%;
+}
+#salvarComprar:hover{
+    background-color: rgb(105, 249, 105);
+}
+#salvarComprar2{
+    width: 100%;
+}
+#salvarComprar2:hover{
+    background-color: rgb(105, 249, 105);
+}
+#searchInput{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#buttonAdicionar {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#historyButton {
+    margin-top: 10px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    float: right;
+    border: none;
+    background-color: #0056b3;
+    width: 100%;
+}
+#historyButton:hover{
+    background-color: #027cff;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width:50% ;
+    padding: 10px;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.box h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.item-text {
+    margin-top: 5px;
+    margin-right: 5px ;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.quantity input {
+    width: 40px;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+button.mark-as-purchased,
+button.delete-item {
+    padding: 6px 10px;
+}
+
+.div-compras {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.edit-button {
+    margin-left: 100px;
+    width: 70px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.container-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.div-button{
+    margin-top: 5px;
+}
