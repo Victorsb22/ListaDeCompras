@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link rel="stylesheet" href="stylehistorico.css">
     <link rel="stylesheet" type="text/css" href="reset.css" />
@@ -12,17 +12,15 @@
     <header>
         <h1>Histórico de Compras</h1>
         <button onclick="goToShoppingList()" id="shoppingListButton">
-        <img src="voltar.png" alt="Lista de Compras">
+        <img class="voltarLista" src="voltar.svg">
     </header>
+    
     <div id="shoppingHistoryContainer">
         <div>
+            <h3 class="title">Ultimas compras</h3>
             <ul id="shoppingHistory"></ul>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Lista de Compras. Todos os direitos reservados.</p>
-    </footer>
-    
     <script src="scripthistorico.js"></script>
 </body>
 </html>

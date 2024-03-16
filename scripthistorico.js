@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var purchasedItems = localStorage.getItem("purchasedItems");
     var items = purchasedItems ? JSON.parse(purchasedItems) : [];
 
-    // Exibir os itens da lista de compras comprados
     items.forEach(function(item) {
         var div = document.createElement("div");
         div.classList.add("history-item");

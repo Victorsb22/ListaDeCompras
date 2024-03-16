@@ -1,15 +1,20 @@
-body {
+*{
     margin: 0;
     padding: 0;
 }
+body {
+    background: linear-gradient(150deg, rgb(151, 199, 244), rgb(201, 227, 251), #ffff, rgb(190, 223, 254), rgb(146, 202, 255));
+    height: 100vh;
+}
 
 h1 {
-    background-color: #0056b3;
+    background-color: #2990ffbe;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    padding: 20px;
+    font-size: 25px;
 }
 
 .geral {
@@ -18,10 +23,11 @@ h1 {
     gap: 50px;
 }
 
+
 .container {
     width: 45%;
     padding: 20px;
-    border: 1px solid #0056b3;
+    border: 1px solid #316efdd1;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -29,20 +35,20 @@ h1 {
 .container2 {
     width: 45%;
     padding: 20px;
-    border: 1px solid #0056b3;
+    border: 1px solid #316efdd1;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
 }
 .itemNaoComprado {
-    width: 20%;
+    width: 25%;
     display: grid;
     height: 200px;
     
 }
 .itemComprado {
     width: 25%;
-    display: grid;
+    height: 200px;
     
 }
 #itemInput {
@@ -51,9 +57,9 @@ h1 {
 
 input[type="text"] {
     width: calc(100% - 20px);
-    padding: 8px;
+    padding: 9px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #57575799;
     border-radius: 3px;
     box-sizing: border-box;
 }
@@ -61,7 +67,7 @@ input[type="text"] {
 button {
     padding: 8px;
     border: none;
-    background-color: #0056b3;
+    background-color: rgb(74, 165, 251);
     color: white;       
     border-radius: 3px;
     cursor: pointer;
@@ -70,22 +76,24 @@ button:hover {
     background-color: #027cff;
 }
 
-#salvarComprar{
-    margin-top: 10px;
-    margin-left: 80%;
-}
 #salvarComprar:hover{
     background-color: rgb(105, 249, 105);
 }
 #salvarComprar2{
     width: 100%;
+    height: 35px;
 }
 #salvarComprar2:hover{
     background-color: rgb(105, 249, 105);
 }
 #searchInput{
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+}
+#searchInput2{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 80px;
 }
 
 #buttonAdicionar {
@@ -102,7 +110,7 @@ button:hover {
     padding: 8px;
     float: right;
     border: none;
-    background-color: #0056b3;
+    background-color: rgb(80, 167, 249);
     width: 100%;
 }
 #historyButton:hover{
@@ -112,21 +120,28 @@ button:hover {
 .boxes {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .box {
     width:50% ;
     padding: 10px;
-    border: 1px solid #0056b3;
+    border: 1px solid #3f9afad3;
     border-radius: 5px;
-    box-sizing: border-box;
     height: 100%;
+    margin-bottom: ;
 }
 
 .box h2 {
-    margin-top: 0;
+    margin-top: 5px;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
+    background-color: #007bffec;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(68, 68, 68, 0.514);
+
 }
 
 .list {
@@ -142,8 +157,9 @@ button:hover {
 }
 
 .item-text {
-    margin-top: 5px;
-    margin-right: 5px ;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .quantity {
@@ -170,10 +186,10 @@ button.delete-item {
     margin-top: 15px;
     display: flex;
     justify-content: center;
+    gap: 5px;
 }
 .edit-button {
-    margin-left: 100px;
-    width: 70px;
+    width: 80px;
     margin-right: 10px;
     margin-bottom: 15px;
 }
@@ -181,9 +197,19 @@ button.delete-item {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #5fa9f8;
     border-radius: 5px;
 }
 .div-button{
+    display: flex;
+    justify-content: center;
     margin-top: 5px;
+}
+.delete-button {
+    width: 80px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.delete-button:hover {
+    background-color: red;
 }
